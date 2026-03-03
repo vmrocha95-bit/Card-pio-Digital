@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Páscoa - Brigadê</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brigade-brown': '#3E2723',
+                        'brigade-gold': '#D4AF37',
+                        'brigade-cream': '#FAF8F5',
+                        'brigade-pink': '#E8C5C5',
+                        'brigade-accent': '#8D6E63'
+                    },
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['"Montserrat"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #FAF8F5; color: #3E2723; }
+        
+        @media print {
+            body { background-color: white; }
+            .no-print { display: none !important; }
+            .page-break { page-break-before: always; }
+            .shadow-xl { box-shadow: none !important; border: 1px solid #e5e7eb; }
+            .print-bg-cream { background-color: #FAF8F5 !important; -webkit-print-color-adjust: exact; }
+            .img-container { background-color: #f3f4f6 !important; }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-brigade-brown selection:bg-brigade-gold selection:text-white">
+
+    <!-- Topo -->
+    <header class="text-center py-8 bg-white shadow-sm print-bg-cream relative">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brigade-brown via-brigade-gold to-brigade-brown"></div>
+        <h1 class="text-4xl md:text-5xl font-serif font-bold tracking-wider text-brigade-brown mt-4">Brigadê</h1>
+        <p class="text-sm tracking-[0.3em] uppercase mt-2 text-brigade-accent">By Alicia Gabrielly</p>
+    </header>
+
+    <!-- Hero Section (Capa) -->
+    <section class="relative w-full h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden bg-black">
+        <div class="absolute inset-0 z-0 bg-black">
+            <!-- Capa: Foto com as 4 fatias na tábua -->
+            <img src="1000283813.jpg" alt="Fatias de Ovo de Páscoa Brigadê" class="w-full h-full object-cover object-center opacity-70">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto mt-12">
+            <h2 class="text-5xl md:text-7xl font-serif font-bold mb-4 drop-shadow-lg text-white">Páscoa Artesanal</h2>
+            <p class="text-xl md:text-2xl font-light italic tracking-wide mb-8 text-white/90">Coleção 2026</p>
+            <div class="w-24 h-px bg-brigade-gold mx-auto"></div>
+        </div>
+    </section>
+
+    <!-- A Caixa Degustação -->
+    <section class="py-16 px-4 md:px-8 max-w-6xl mx-auto">
+        <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-gray-100 print-bg-cream relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-brigade-pink rounded-bl-full opacity-20"></div>
+            <div class="absolute bottom-0 left-0 w-24 h-24 bg-brigade-gold rounded-tr-full opacity-10"></div>
+            
+            <div class="relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-10">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Ovo Fatia Degustação</h2>
+                    <p class="text-lg leading-relaxed text-gray-700 mb-6">
+                        Nesta Páscoa, a Brigadê convida-o a explorar um universo de texturas e sabores irresistíveis. Apresentamos o <strong>Ovo Fatia</strong>, uma seleção premium com 6 fatias para se deliciar e provar cada uma das nossas criações artesanais.
+                    </p>
+                    <div class="inline-block bg-brigade-cream px-6 py-2 rounded-full border border-brigade-gold/30 text-sm font-medium text-brigade-accent mb-8">
+                        Peso médio aproximado por fatia: 120g
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-gray-50 rounded-xl p-8 border border-gray-100">
+                    <div>
+                        <h3 class="font-serif text-2xl mb-4 text-brigade-brown">Personalize a sua caixa:</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="text-brigade-gold mr-3">✦</span>
+                                <div>
+                                    <strong class="block text-brigade-brown">Opção A: Trio de Sabores</strong>
+                                    <span class="text-sm text-gray-600">Escolha 3 sabores distintos (recebe 2 fatias de cada).</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brigade-gold mr-3">✦</span>
+                                <div>
+                                    <strong class="block text-brigade-brown">Opção B: Degustação Completa</strong>
+                                    <span class="text-sm text-gray-600">Receba 1 fatia de cada um dos nossos 6 sabores.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="text-center md:text-right md:border-l border-gray-200 md:pl-8">
+                        <p class="text-sm uppercase tracking-widest text-gray-500 mb-2">Valor da Caixa (6 fatias)</p>
+                        <p class="text-5xl md:text-6xl font-serif text-brigade-brown font-bold">R$ 150<span class="text-2xl">,00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="page-break"></div>
+
+    <!-- Sabores -->
+    <section class="text-center py-10 px-4">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-brigade-brown mb-4">Nossa Coleção de Sabores</h2>
+        <div class="w-16 h-1 bg-brigade-gold mx-auto mb-4"></div>
+        <p class="text-gray-600 max-w-2xl mx-auto">Descubra os detalhes de cada criação exclusiva da Alta Confeitaria Brigadê.</p>
+    </section>
+
+    <section class="py-8 px-4 md:px-8 max-w-7xl mx-auto pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <!-- Morango Supremo -->
+            <div class="group bg-white rounded-t-full rounded-b-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 flex flex-col h-full">
+                <div class="img-container h-72 overflow-hidden relative bg-gray-100">
+                    <img src="1000285334.jpg" alt="Morango Supremo" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute top-4 right-4 md:top-6 md:right-6 z-20 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-brigade-pink shadow-sm">Novo</div>
+                </div>
+                <div class="p-8 text-center flex-grow flex flex-col justify-between relative z-20 bg-white">
+                    <div>
+                        <h3 class="text-2xl font-serif font-bold mb-3 text-brigade-brown">Morango Supremo</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-4">Casca rosinha com recheio de brigadeiro de leite ninho harmonizado perfeitamente com a nossa geleia de morango artesanal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maracujá -->
+            <div class="group bg-white rounded-t-full rounded-b-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 flex flex-col h-full">
+                <div class="img-container h-72 overflow-hidden relative bg-gray-100">
+                    <img src="1000283946.jpg" alt="Maracujá" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                </div>
+                <div class="p-8 text-center flex-grow flex flex-col justify-between relative z-20 bg-white">
+                    <div>
+                        <h3 class="text-2xl font-serif font-bold mb-3 text-brigade-brown">Maracujá</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-4">A intensidade da casca de chocolate meio amargo com um delicioso, vibrante e aveludado brigadeiro de Maracujá.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prestígio -->
+            <div class="group bg-white rounded-t-full rounded-b-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 flex flex-col h-full">
+                <div class="img-container h-72 overflow-hidden relative bg-gray-100">
+                    <img src="1000283963.jpg" alt="Prestígio" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                </div>
+                <div class="p-8 text-center flex-grow flex flex-col justify-between relative z-20 bg-white">
+                    <div>
+                        <h3 class="text-2xl font-serif font-bold mb-3 text-brigade-brown">Prestígio</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-4">O clássico reinventado. Casca de chocolate blend com um maravilhoso e cremoso beijinho artesanal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ninho com Nutella -->
+            <div class="group bg-white rounded-t-full rounded-b-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 flex flex-col h-full">
+                <div class="img-container h-72 overflow-hidden relative bg-gray-100">
+                    <img src="1000283918.jpg" alt="Ninho com Nutella" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute top-4 right-4 md:top-6 md:right-6 z-20 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-brigade-brown shadow-sm">Favorito</div>
+                </div>
+                <div class="p-8 text-center flex-grow flex flex-col justify-between relative z-20 bg-white">
+                    <div>
+                        <h3 class="text-2xl font-serif font-bold mb-3 text-brigade-brown">Ninho com Nutella</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-4">A elegância do chocolate branco com recheio de brigadeiro de leite ninho e uma camada generosa de nutella pura.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doce de Leite -->
+            <div class="group bg-white rounded-t-full rounded-b-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 flex flex-col h-full">
+                <div class="img-container h-72 overflow-hidden relative bg-gray-100">
+                    <img src="1000283938.jpg" alt="Doce de Leite" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                </div>
+                <div class="p-8 text-center flex-grow flex flex-col justify-between relative z-20 bg-white">
+                    <div>
+                        <h3 class="text-2xl font-serif font-bold mb-3 text-brigade-brown">Doce de Leite</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-4">Sofisticação em cada mordida. Casca de chocolate meio amargo com doce de leite cremoso e uma pitada de flor de sal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ferrero -->
+            <div class="group bg-white rounded-t-full rounded-b-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 flex flex-col h-full">
+                <div class="img-container h-72 overflow-hidden relative bg-gray-100">
+                    <img src="1000283927.jpg" alt="Ferrero" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                </div>
+                <div class="p-8 text-center flex-grow flex flex-col justify-between relative z-20 bg-white">
+                    <div>
+                        <h3 class="text-2xl font-serif font-bold mb-3 text-brigade-brown">Ferrero</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-4">Casca de chocolate blend com a intensidade do brigadeiro 50% cacau, amendoim crocante e deliciosa nutella.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brigade-brown text-brigade-cream py-12 px-4 text-center">
+        <h2 class="text-3xl font-serif mb-6 text-brigade-gold">Brigadê</h2>
+        <p class="mb-8 font-light max-w-md mx-auto text-white/80">Transformamos a sua Páscoa numa experiência inesquecível de sabores e texturas.</p>
+        
+        <div class="hidden print:block mt-8 border-t border-white/20 pt-8">
+            <p class="font-bold text-lg text-brigade-gold">Encomendas e Informações:</p>
+            <p class="mt-2 text-white">Instagram: @Brigade_docesgourmet</p>
+        </div>
+    </footer>
+
+</body>
+</html>
